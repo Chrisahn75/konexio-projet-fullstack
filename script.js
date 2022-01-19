@@ -3,21 +3,18 @@ $("#btnShowData").click(function getAllCountries() {
         url: "https://restcountries.com/v3.1/all",
         success: function (data) {
             data.forEach((country) => {
-                $("#country").html(`<p>${country.name.common}</p>`);
-                $("#capital").html(`<p>${country.capital}</p>`);
-                $("#continent").html(`<p>${country.continents}</p>`);
+                $("#list").append(`<h3>${country.name.common}</h3>`);
+                $("#list").append(`<li> Capitale : ${country.capital}</li>`);
+                $("#list").append(`<li> Continent: ${country.continents}</li>`);
                 for(currency in country.currencies)  {
-                    $("#monnaie").html(`<p>${country.currencies[currency].name}</p>`);
+                    $("#list").append(`<li> Monnaie : ${country.currencies[currency].name}</li>`);
                 }
                 for(language in country.languages)  {
-                    $("#languages").html(`<p>${country.languages[language]}</p>`);
+                    $("#list").append(`<li> Langue : ${country.languages[language]}</li>`);
                 }
-    
-    
-            })
-           
+            })   
         }
     })
 });
 
-getAllCountries()
+getAllCountries();
