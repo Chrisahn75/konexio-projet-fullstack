@@ -23,20 +23,31 @@
             <form class="form">
                 <div id="searchPart">
                     <div>
-                        <input type="text" name="countryName" id="searchCountry" placeholder="Enter name of country"/>
+                        <input type="text" name="countryName" id="search" placeholder="Enter name of country"/>
                         <label for="radio1"></label>
                     </div>
                     <div>
-                        <p>OR <br></p>
+                        <p id="or">OR <br></p>
                     </div>
                     <div>
-                        <input type="text" name="capitalName" id="searchCapital" placeholder="Enter name of capital"/>
+                        <input type="text" name="capitalName" id="search" placeholder="Enter name of capital"/>
                         <label for="radio2"></label>
                     </div>
                 </div>
             </form>
         </section>
 
+    <!-- SELECT ELEMENT PART -->
+    <form class="formContinents">
+        <label for="continents">Choose a continents:</label>
+        <select name="continents" id="continents">
+          <option value="africa" id="africa">Africa</option>
+          <option value="europe" id="europe">Europe</option>
+          <option value="asia" id="asia">Asia</option>
+          <option value="america" id="america">America</option>
+          <option value="oceania" id="oceania">Oceania</option>
+        </select>
+      </form>
     <!-- LIST OF ELEMENTS -->
         <section>
             <div class="btn">
