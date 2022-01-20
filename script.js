@@ -52,7 +52,6 @@ $("#btnShowData").click(function () {
 
 $("select").change(function () {
     select = $("select[id=continents]").val();
-  
     $.ajax({
       url: `https://restcountries.com/v3.1/continents/${select}`,
       success: function (data) {
