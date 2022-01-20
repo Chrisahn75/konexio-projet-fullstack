@@ -1,5 +1,4 @@
 .overlay{
-   background: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/footer_lodyas.png);
   top:0;
   left:0;
   width:100%;
@@ -29,35 +28,6 @@ p{
 
 }
 
-@-webkit-keyframes scroll{
-  100%{
-    background-position:0px -3000px;
-  }
-}
-
-@-moz-keyframes scroll{
-  100%{
-    background-position:0px -3000px;
-  }
-}
-
-@-o-keyframes scroll{
-  100%{
-    background-position:0px -3000px;
-  }
-}
-
-@-ms-keyframes scroll{
-  100%{
-    background-position:0px -3000px;
-  }
-}
-
-@keyframes scroll{
-  100%{
-    background-position:0px -3000px;
-  }
-}
 
 .wrap{
   width:400px;
@@ -104,33 +74,4 @@ input[type="text"]:focus{
   border-left:5px solid #e74c3c;
   -webkit-transition:0.4s ease;
 }
-
-
-.fa-newspaper-o{
-  font-size:70% !important;
-  margin-right:10px;
-  position:relative;
-  top:-4px;
-}
-
-a{
-  font:13px Raleway;
-  color:#FFF;
-  font-weight:700;
-  text-decoration:none;
-  opacity:0.6;
-}
-
-a:hover{
-  opacity:1;
-}
-
-.fa-user,.fa-question{
-  margin-right:5px;
-}
-
-.fa-user{
-  margin-left:5px;
-}
-
 
