@@ -1,11 +1,5 @@
 .overlay{
-  position:fixed;
    background: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/footer_lodyas.png);
-  -webkit-animation:100s scroll infinite linear;
-  -moz-animation:100s scroll infinite linear;
-  -o-animation:100s scroll infinite linear;
-  -ms-animation:100s scroll infinite linear;
-  animation:100s scroll infinite linear;
   top:0;
   left:0;
   width:100%;
@@ -14,7 +8,7 @@
 
 h1{
   text-align:center;
-  color:#FFF !important;
+  color: #e74c3c!important;
   margin-top:20%;
   font:60px Lobster;
   text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
