@@ -55,6 +55,17 @@ button[type="submit"]{
   opacity:0.8;
 }
 
+button[type="reset"]{
+  background:#e74c3c;
+  color:#FFF;
+  width:105%;
+  padding:15px;
+  font-weight:700;
+  opacity:0.8;
+  margin-bottom: 12px;
+  
+}
+
 .formContinents{
   width:100%;
   padding:10px;
@@ -69,6 +80,11 @@ button[type="submit"]{
 button[type="submit"]:hover{
 cursor:pointer;
   opacity:1;
+}
+
+button[type="reset"]:hover{
+  cursor:pointer;
+    opacity:1;
 }
 
 input[type="text"]:focus{
