@@ -51,7 +51,7 @@ $("#btnShowData").click(function () {
 // SELECT CONTINENTS PART 
 
 $("select").change(function () {
-    select = $("select [id=continents]").val();
+    select = $("select[id=continents]").val();
   
     $.ajax({
       url: `https://restcountries.com/v3.1/continents/${select}`,
@@ -60,6 +60,14 @@ $("select").change(function () {
           $("#list").append(`<li> Country: ${country.name.common} </li>`);
           $("#list").append(`<li> Capital : ${country.capital}</li>`);
           $("#list").append(`<li> Continent : ${country.continents}</li>`);
+
+        for(currency in country.currencies)  {
+            $("#list").append(`<li> Cash : ${country.currencies[currency].name}</li>`);
+        }
+
+        for(language in country.languages)  {
+            $("#list").append(`<li> Language : ${country.languages[language]}</li>`);
+        }
         });
       },
     });
