@@ -4,36 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,800,700,900,300,100' rel='stylesheet' type='text/css'>
     <link  rel= "stylesheet" href="../front/styles.css">
     <title>Countries API</title>
 </head>
-<body>
+<body class="overlay">
+    <section class="wrap">
     <header>
         <div class="title">
             <h1> Countries API</h1>
         </div>
     </header>
     <main>
-<!-- SEARCH PART  -->
+ <!-- SEARCH PART  -->
     <section>
-        <form>
+        <form class="form">
              <div id="searchPart">
                 <input type="text" name="countryName" id="search" placeholder="Enter name of country"/>
-                <label for="radio1">Country</label>
+                <label for="radio1"></label>
             </div>
 
         </form>
 
     </section>
 
-
-
-
 <!-- LIST OF ELEMENTS -->
     <section>
         <div class="btn">
             <div class="Countrylist">
-                <button id="btnShowData" value="btn"> Show Data</button>
+                <button type="submit" id="btnShowData"  value="btn"> Show Data</button>
              <ul id="list">
             </ul>
         </div>
@@ -44,6 +45,7 @@
 
     <script src="../jquery-3.6.0.js"></script>
     <script src= "../script.js"></script>
+    </section>
 </body>
 <footer>
 

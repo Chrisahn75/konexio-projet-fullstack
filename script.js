@@ -72,3 +72,5 @@ $("#btnShowData").click(function getAllCountries() {
 });
 
 getAllCountries();
+
+
