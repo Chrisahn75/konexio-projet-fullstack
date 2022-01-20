@@ -13,13 +13,33 @@
             <h1> Countries API</h1>
         </div>
     </header>
-    <div class="btn">
-        <div class="Countrylist">
-        <button id="btnShowData" value="btn"> Show Data</button>
-            <ul id="list">
+    <main>
+<!-- SEARCH PART  -->
+    <section>
+        <form>
+             <div id="searchPart">
+                <input type="text" name="countryName" id="search" placeholder="Enter name of country"/>
+                <label for="radio1">Country</label>
+            </div>
+
+        </form>
+
+    </section>
+
+
+
+
+<!-- LIST OF ELEMENTS -->
+    <section>
+        <div class="btn">
+            <div class="Countrylist">
+                <button id="btnShowData" value="btn"> Show Data</button>
+             <ul id="list">
             </ul>
         </div>
-    </div>
+        </div>
+    </section>
+    </main>
 
 
     <script src="../jquery-3.6.0.js"></script>
