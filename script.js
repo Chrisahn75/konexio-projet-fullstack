@@ -1,10 +1,10 @@
-// FORM PART
+// FORM PART COUNTRY
 $("#btnShowData").click(function () {
     let country = $("input").val();
     let search = $("input[id=search]:checked", "#searchPart").val()
 
     if (country) {
-        if (search === 1 || !search) {
+        if (search === "country" || !search) {
             $.ajax({
                 url: `https://restcountries.com/v3.1/name/${country}`,
                 success: function (data) {
@@ -23,7 +23,7 @@ $("#btnShowData").click(function () {
                     })
                 },
              });
-        } else {
+        } else if (search === "capital"){
             $.ajax({
                 url: `https://restcountries.com/v3.1/capital/${country}`,
                 success: function (data) {
@@ -47,7 +47,6 @@ $("#btnShowData").click(function () {
         getAllCountries();
     }
 });
-
 
 // LIST OF ALL 
 $("#btnShowData").click(function getAllCountries() {
