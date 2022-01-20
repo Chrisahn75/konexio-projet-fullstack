@@ -1,7 +1,8 @@
 // FORM PART COUNTRY
 $("#btnShowData").click(function () {
     let country = $("input").val();
-    let search = $("input[id=search]:checked", "#searchPart").val()
+    let search = $("input[id=searchCountry]:checked", "#searchPart").val()
+    let searchC = $("input[id=searchCapital]:checked", "#searchPart").val()
 
     if (country) {
         if (search === "country" || !search) {
@@ -23,7 +24,7 @@ $("#btnShowData").click(function () {
                     })
                 },
              });
-        } else if (search === "capital"){
+        } else if (searchC === "capital"){
             $.ajax({
                 url: `https://restcountries.com/v3.1/capital/${country}`,
                 success: function (data) {
